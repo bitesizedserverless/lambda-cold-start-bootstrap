@@ -15,6 +15,8 @@ setuptools.setup(
     package_dir={"": "lambda_cold_start_bootstrap"},
     packages=setuptools.find_packages(where="lambda_cold_start_bootstrap"),
     install_requires=[
+        "aws-cdk.aws_lambda==1.120.0",
+        "aws-cdk.aws_s3==1.120.0",
         "aws-cdk.core==1.120.0",
         "black==21.6b0",
         "pylint==2.10.2",

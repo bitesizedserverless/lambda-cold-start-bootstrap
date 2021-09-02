@@ -19,5 +19,5 @@ class Config:  # pylint: disable=too-few-public-methods
 
     def base(self):
         """Define the base configuration."""
-        __config = {}
+        __config = {"lambda_timeout": 60}
         return {**__config, **self._default_config}
